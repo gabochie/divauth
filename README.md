@@ -1,6 +1,8 @@
 # DivAuth — book projects
 
-Three books are built from this repository. Each has one canonical manuscript and a build that generates print and digital outputs.
+Four books are built from this repository. Each has one canonical manuscript and a build that generates print and digital outputs.
+
+**Before any release, check [`OUTSTANDING.md`](OUTSTANDING.md)** — it tracks the blockers and decisions still open across all four books.
 
 | # | Book | Canonical manuscript | Outputs | Status |
 |---|---|---|---|---|
