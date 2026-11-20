@@ -4,13 +4,15 @@
 
 *A Field Manual for Personal Spiritual Liberation*
 
+*Christ is the Deliverer; this manual teaches the believer's response.*
+
 **© 2026 Gideon Abochie, writing as Deon ChristoLove (aka Gabochie)**
 
 ---
 
 ## About this book
 
-This is the first release of *Self-Deliverance 101*. It covers Parts One to Four — the theological foundation and the practical methodology — in twenty-seven chapters, together with the F.R.E.E.D.O.M. framework, the tools, and the beginning of the 30-Day Freedom and Renewal Programme.
+This volume covers Parts One to Four — the theological foundation and the practical methodology — in twenty-seven chapters, with the F.R.E.E.D.O.M. framework, the tools, and a starter 30-Day Freedom and Renewal Programme.
 
 The central claim is simple:
 
@@ -34,7 +36,7 @@ The F.R.E.E.D.O.M. framework introduced in Part Four is an **organisational fram
 
 ## A word on sources and translations
 
-Scripture quotations are from the Authorized (King James) Version unless otherwise noted. Where the original languages clarify a claim, the Greek or Hebrew is given. The theological and lexical foundations of this book have been checked against the companion volume, *Divine Authority: Christ, Demons and Unclean Spirits*, and its verification report.
+Scripture quotations are from the Authorized (King James) Version unless otherwise noted. Where the original languages clarify a claim, the Greek or Hebrew is given. The theological and lexical foundations of this book have been checked against the companion volume, *Divine Authority: Christ, Demons and Unclean Spirits*.
 
 The terms used for the spiritual realm are not interchangeable labels. Hebrew *Satan* (שָׂטָן), Greek *Diabolos* (διάβολος), *Daimonion* (δαιμόνιον), *Pneuma akatharton* (πνεῦμα ἀκάθαρτον), and *Ponēros* (πονηρός) have distinct uses. Care with words is part of care with people.
 
@@ -51,10 +53,6 @@ The following are non-negotiable:
 - **Seek help.** Where there is psychosis, self-harm, suicide risk, abuse, addiction withdrawal, or a medical condition, contact qualified help first. A mature pastor or counsellor may walk with you, but they do not replace a clinician.
 
 These safeguards are not a lack of faith. They are part of loving God and loving your neighbour.
-
-## Draft note
-
-This MVP manuscript covers Parts One to Four. Parts Five to Seven — reclaiming the mind and life, maintaining freedom, and reclaiming your destiny — are planned as a later release. The 30-Day Freedom and Renewal Programme is present here in starter form.
 
 ---
 
@@ -114,7 +112,7 @@ This changes the whole shape of the Christian life. We are not fighting *for* vi
 
 > "That through death he might destroy him that had the power of death, that is, the devil" — Hebrews 2:14
 
-The word "destroy" there is *katargeo* — to render inactive, to bring to nothing, to nullify. The one who held the power of death has been rendered powerless by the death of Christ.
+The word "destroy" there is *katargeo* — to render inactive, to bring to nothing, to nullify. The one who held the power of death has been rendered powerless with respect to the judgment of death; he remains active, but his sentence no longer stands.
 
 ## 1.2 The battle is not between equal powers
 
@@ -202,7 +200,7 @@ The Bible is more careful than that.
 
 **The Devil — Greek *Diabolos* (διάβολος).** The word means slanderer or false accuser. It is used of Satan in the New Testament and emphasizes his work of accusation.
 
-**Demon — Greek *Daimonion* (δαιμόνιον).** In the Septuagint this word is used for the *shedim*, *elilim*, and *sairim* of Deuteronomy 32:17 and Psalm 96:5 — false gods and spirits, not a systematic hierarchy of evil.
+**Demon — Greek *Daimonion* (δαιμόνιον).** The Septuagint uses this word for the false gods and spirits of the ancient Near East — for example, in Deuteronomy 32:17. The related biblical vocabulary is broad; it is not a systematic hierarchy of evil.
 
 **Unclean spirit — Greek *Pneuma akatharton* (πνεῦμα ἀκάθαρτον).** This phrase emphasizes ritual and moral impurity. In the Gospels it is often paired with "demon."
 
@@ -600,7 +598,7 @@ Paul writes to the Colossians:
 
 > "And you, being dead in your sins and the uncircumcision of your flesh, hath he quickened together with him, having forgiven you all trespasses" — Colossians 2:13
 
-The problem is described as death, not as weakness. A dead person cannot improve themselves. The solution is similarly radical: God made us alive together with Christ.
+The problem is described as death, not as weakness. Dead people do not rehabilitation programmes. The solution is correspondingly radical: God made us alive together with Christ.
 
 This is why moral effort alone never brings freedom. You cannot reform your way into a new life. You must be made alive.
 
@@ -612,7 +610,7 @@ The next verse is the heart of the passage:
 
 The "handwriting of ordinances" is best understood as the record of obligation and accusation standing against a person — the law's witness to human failure. The cross is not a negotiation over that record. It is the removal of it.
 
-**Correction:** The King James says "handwriting of ordinances." The underlying sense is a handwritten record or certificate of indebtedness. The traditional phrase "certificate of debt" is defensible but should be presented as an interpretation, not as the literal wording of the text.
+The KJV's "handwriting of ordinances" denotes a handwritten record of obligation; "certificate of debt" is a helpful paraphrase, not the literal wording.
 
 ## 7.3 Spoiling the principalities
 
@@ -709,7 +707,7 @@ The distinction matters. The defeat is decisive; the application is progressive.
 
 ## 8.3 He was cast down
 
- Revelation 12 describes a war in heaven and the casting down of the accuser:
+Revelation 12 describes a war in heaven and the casting down of the accuser:
 
 > "And I heard a loud voice saying in heaven, Now is come salvation, and strength, and the kingdom of our God, and the power of his Christ: for the accuser of our brethren is cast down, which accused them before our God day and night." — Revelation 12:10
 
@@ -868,7 +866,7 @@ The seventy returned from ministry with joy, saying, "Lord, even the devils are 
 
 This is the safeguard against spiritual pride. The ground of your joy is not what you can command. It is that you belong to Christ.
 
-**Important nuance:** Luke 10:17–20 was spoken to the disciples in a particular mission context. Its application to believers today must be explained alongside the wider New Testament teaching on authority in Christ (Matthew 28:18; Ephesians 1:19–23; Colossians 2:15). It should not be presented as an unrestricted personal guarantee that every command will produce a particular result.
+Luke 10:17–20 was spoken to the disciples in a particular mission context. Its application to believers today belongs alongside the wider New Testament teaching on authority in Christ (Matthew 28:18; Ephesians 1:19–23; Colossians 2:15). It is not an unrestricted personal guarantee that every command will produce a particular result.
 
 ## 10.5 Speaking the name well
 
@@ -953,7 +951,7 @@ The Spirit brings freedom by several means:
 - **Sanctification** — producing character (Galatians 5:22–23).
 - **Empowerment** — enabling witness and service (Acts 1:8).
 
-Notice that most of these are not dramatic. The Spirit's normal work is slow and deep. AChristian maturity is measured by character, not by intensity.
+Notice that most of these are not dramatic. The Spirit's normal work is slow and deep. Christian maturity is measured by character, not by intensity.
 
 ## 11.4 The fruit, not the gifts
 
@@ -982,6 +980,16 @@ The Christian life is not self-managed spirituality. It is life in the Spirit. T
 
 Freedom sustained by the Spirit is freedom that lasts.
 
+## 11.7 The gifts, and a recognised disagreement
+
+Christians hold different, sincere views about whether the gifts listed in 1 Corinthians 12–14 operate today in the same form as in the first century. This book does not require agreement on that question in order to teach what it teaches.
+
+Its own position is modest: the Spirit still convicts, illuminates, strengthens and transforms. Whether the extraordinary gifts are distributed today as they were in the apostolic age is a question for the church to wrestle with in charity. Where a church has a settled view, this material should be received within that view, not used to overturn it.
+
+Nor should this book be read as saying that every believer is called to the same ministry. The New Testament describes a distributed church: some are apostles, some prophets, some evangelists, some pastors and teachers (Ephesians 4:11), and the body has many members with different functions (Romans 12:3–8; 1 Corinthians 12). A person may pray, resist, repent and walk in freedom without being called to minister deliverance to others.
+
+> "But all these worketh that one and the selfsame Spirit, dividing to every man severally as he will." — 1 Corinthians 12:11
+
 ### Key Scriptures
 
 - Acts 1:8 — power for witness
@@ -1004,7 +1012,7 @@ Read Galatians 5:22–23. Choose one aspect of the fruit that is weakest in your
 
 # Chapter 12 — Seated with Christ: Understanding Your Spiritual Position
 
-Ephesians 2:6 says God " hath raised us up together, and made us sit together in heavenly places in Christ Jesus." This chapter asks what it means to live from that position.
+Ephesians 2:6 says God "hath raised us up together, and made us sit together in heavenly places in Christ Jesus." This chapter asks what it means to live from that position.
 
 ## 12.1 The already and the not yet
 
@@ -1016,6 +1024,14 @@ The New Testament holds two truths in tension:
 This tension is not a contradiction. It is the shape of the Christian life. You are a new creation living in an old world, with an old nature that still speaks (Romans 7).
 
 The error is to collapse one side. If you emphasise only the "already," you will deny the reality of ongoing struggle. If you emphasise only the "not yet," you will live as though freedom is always future.
+
+The New Testament's "not yet" is larger than personal immaturity. It includes the resurrection of the body, the final judgment, and the restoration of all things:
+
+> "For he must reign, till he hath put all enemies under his feet." — 1 Corinthians 15:25
+
+> "And I saw a new heaven and a new earth: for the first heaven and the first earth were passed away; and there was no more sea." — Revelation 21:1
+
+The Christian waits for a completed kingdom, not merely for a better week. That hope does not weaken present freedom; it steadies it.
 
 ## 12.2 The throne of grace
 
@@ -1170,6 +1186,14 @@ Begin with truth, not with intensity:
 5. Take one practical step of obedience.
 6. Seek help if the pattern is entrenched or dangerous.
 
+### A composite illustration — not a testimony
+
+A woman in her thirties came to a small group saying only that she was "tired all the time." She had been praying for deliverance for two years. During a quiet conversation it emerged that she was sleeping four hours a night, caring for a parent, and had not told anyone what had happened to her at seventeen.
+
+Nobody commanded a demon. They helped her tell the truth, referred her to a counsellor, and arranged for two friends to sit with her on hard evenings. She reads Ephesians 2:6 each morning now — not as a declaration to perform, but as a reminder of who she is when the old story starts speaking.
+
+Six months later she was still tired. She was also no longer afraid, and she was no longer alone. That is a genuine deliverance story, and it looks nothing like the version most books tell.
+
 ### Key Scriptures
 
 - James 1:14–15 — desire to death
@@ -1275,6 +1299,8 @@ Jesus taught His disciples to forgive:
 
 This is a serious saying. It places forgiveness at the centre of the Christian life, not at the edge.
 
+If you are in an abusive situation, read this alongside the safeguard: forgiveness never requires you to remain in danger. Safety and proper reporting come first.
+
 ## 15.2 Why bitterness is dangerous
 
 > "Looking diligently lest any man fail of the grace of God; lest any root of bitterness springing up trouble you, and thereby many be defiled" — Hebrews 12:15
@@ -1285,7 +1311,7 @@ Paul connects bitterness with anger and malice:
 
 > "Let all bitterness, and wrath, and anger, and clamour, and evil speaking, be put away from you, with all malice: And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake hath forgiven you." — Ephesians 4:31–32
 
-The ground of forgiveness is not the Other person's worthiness. It is "even as God for Christ's sake hath forgiven you."
+The ground of forgiveness is not the other person's worthiness. It is "even as God for Christ's sake hath forgiven you."
 
 ## 15.3 Forgiveness and justice
 
@@ -1432,7 +1458,7 @@ The New Testament gives a concrete example of what renouncing occult practice lo
 
 > "Many of them also which used curious arts brought their books together, and burned them before all men: and they counted the price of them, and found it fifty thousand pieces of silver." — Acts 19:19
 
-The believers in Ephesus did not keep their scrolls "just in case." Publicly and at significant cost, they destroyed the instruments of their former practice.
+The account does not mention anyone keeping a scroll back. Publicly and at significant cost, the Ephesians destroyed the instruments of their former practice.
 
 The principle for today is not that every book or object must be burned, but that a clean break is often necessary. What feeds the old allegiance should be removed — objects, apps, subscriptions, relationships, and habits that draw the heart back.
 
@@ -1500,9 +1526,9 @@ Generational patterns are usually a mixture of:
 
 - **Behaviour** — a parent's habits modelled and repeated.
 - **Beliefs** — "this is just how we are" transmitted as family truth.
-- **Consequences** — poverty, addiction, addiction's aftermath, broken relationships.
+- **Consequences** — poverty, addiction and its aftermath, broken relationships.
 - **Trauma** — unhealed wounds that shape parenting and fear.
-- **Spiritual allegiance** — practices and commitments handed down.
+- **Household example** — Practices and commitments modelled in the home.
 
 Most of these are not demonic. They are human, and they are changed by truth, repentance, grace, and patient discipleship.
 
@@ -1561,7 +1587,7 @@ The enemy's most effective weapon is often not temptation but fear. Fear shrinks
 
 > "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind." — 2 Timothy 1:7
 
-Fear does not come from God. That does not mean fear is a sin — it means it is not His gift. The passage gives the opposite: power, love, and a sound mind.
+The spirit of fear is not God's gift to His people. That does not mean the emotion of fear is a sin — it means that a life governed by dread is not the life He intends. The passage gives the opposite: power, love, and a sound mind.
 
 A sound mind is sometimes translated as "self-control" or "a disciplined mind." Either way, the promise includes mental steadiness.
 
@@ -1887,6 +1913,14 @@ Many people find it easier to forgive others than to receive forgiveness themsel
 
 The invitation is from God. The cleansing is His promise.
 
+### A composite illustration — not a testimony
+
+A man had not spoken to his brother in eleven years. He prayed the prayer of release every morning for a month and felt nothing. Then he wrote one sentence on a card: "I will not carry the judgment; I will keep the boundary." He put the card in his wallet.
+
+He did not reconcile with his brother — the abuse had been real, and contact would have been unsafe. But he stopped rehearsing the argument in his head. He began sleeping again. When he finally spoke to his pastor, the first thing he said was, "I thought forgiveness meant letting him back in."
+
+It does not. It means the debt is no longer yours to hold.
+
 ### Key Scriptures
 
 - Ephesians 4:32 — the ground of forgiveness
@@ -2051,6 +2085,14 @@ When resistance feels slow, check four things:
 If these are in place, continue in faithfulness. Do not turn slowness into a reason to escalate the drama of your prayers. The goal is not an intensity that exhausts you. It is a life that gradually looks like Christ.
 
 > "And let us not be weary in well doing: for in due season we shall reap, if we faint not." — Galatians 6:9
+
+## 24.7 Who is authorised to command?
+
+This book uses the language of command because the Gospels and Acts use it. It does not follow that every command is appropriate in every mouth.
+
+The "clear basis" spoken of earlier is not a private feeling of boldness. It includes: belonging to Christ, acting as His representative rather than in your own name, alignment with His character and will, a genuine understanding of the situation, and — where the ministry is public or involves another person — the recognition and accountability of a church community.
+
+A person may have all of these and still choose prayer and truth rather than a command. Restraint is not unbelief. Where there is doubt about a person's safety or where clinical needs are present, the authorised act is to refer.
 
 ### Key Scriptures
 
@@ -2276,12 +2318,18 @@ Freedom must be sustained:
 - daily prayer and Scripture,
 - regular community,
 - an accountability relationship,
-- the 30-day programme in Appendix C,
+- the 30-Day Programme in Appendix C,
 - and professional follow-up where needed.
 
 > "Not forsaking the assembling of ourselves together, as the manner of some is; but exhorting one another: and so much the more, as ye see the day approaching." — Hebrews 10:25
 
 Isolation is not spirituality.
+
+### A composite illustration — not a testimony
+
+A young man fasted and prayed for three days, convinced that if he could just be spiritual enough the pattern would break. On the third evening he was exhausted and more afraid than when he began. A deacon sat with him, asked a few plain questions, and drove him to a clinic. He was diagnosed with a treatable condition and began medication that same week.
+
+He still prays. He still reads the Word. He also takes his tablets. He says the most freeing thing anyone told him was this: "Receiving help is not the failure of your faith. It is one of the ways faith receives."
 
 ### Key Scriptures
 
@@ -2307,18 +2355,17 @@ Write down: (1) one person you could call in a crisis, (2) one qualified service
 
 The practice of self-deliverance is not a technique for controlling the spiritual realm. It is a life of responding to what Christ has already done.
 
-The order matters:
+The seven movements of F.R.E.E.D.O.M. give this part its shape:
 
-1. **Prepare** — submit to God, examine the ground, put on the armour, set boundaries (Ch. 20).
-2. **Repent** — name the sin, agree with God, turn practically (Ch. 21).
-3. **Forgive** — release the debt, keep the boundaries (Ch. 22).
-4. **Renounce** — end the allegiance, replace what you remove (Ch. 23).
-5. **Resist** — stand firm; do not investigate the enemy (Ch. 24).
-6. **Pray** — ask in Christ's name according to God's will (Ch. 25).
-7. **Renew** — replace lies with truth (Ch. 26).
-8. **Receive help** — community, ministry, and qualified care (Ch. 27).
+1. **F — Face the Truth** — submit to God, examine the ground, put on the armour, set boundaries (Ch. 20; the diagnostic work begins in Ch. 13–16).
+2. **R — Repent** — name the sin, agree with God, turn practically (Ch. 21).
+3. **E — Exercise Forgiveness** — release the debt, keep the boundaries (Ch. 22).
+4. **E — Explicitly Renounce** — end the allegiance, replace what you remove (Ch. 23).
+5. **D — Declare Christ's Truth** — pray in His name and replace lies with His Word (Ch. 25–26).
+6. **O — Oppose the Devil** — stand firm; do not investigate the enemy (Ch. 24).
+7. **M — Maintain Your Freedom** — receive help, walk in community, keep the disciplines (Ch. 27 and Appendix C).
 
-Every step is grounded in a finished work and a living relationship. None of it is a machine.
+The letters are a memory device, not a chronological sequence; declaring truth and opposing the enemy interleave in ordinary life. Preparation belongs inside *Face the Truth*, and receiving help belongs inside *Maintain Your Freedom*. Every movement is grounded in a finished work and a living relationship. None of it is a machine.
 
 ---
 
@@ -2328,13 +2375,13 @@ F.R.E.E.D.O.M. is an **organisational framework for discipleship practice**. It 
 
 | Letter | Movement | Meaning | Chapter |
 |---|---|---|---|
-| **F** | Face the Truth | Honestly identify the problem and acknowledge responsibility where applicable; reject denial. | 13–16 |
+| **F** | Face the Truth | Honestly identify the problem, submit to God and set wise boundaries; reject denial. | 13–16, 20 |
 | **R** | Repent | Turn away from known sin and return to God. | 21 |
 | **E** | Exercise Forgiveness | Release resentment and pursue reconciliation where appropriate and safe. | 15, 22 |
 | **E** | Explicitly Renounce | Reject sinful practices, occult involvement, false allegiances and agreements with lies. | 17, 23 |
-| **D** | Declare Christ's Truth | Confess and believe what Scripture says about Jesus and your identity in Him. | 26 |
+| **D** | Declare Christ's Truth | Pray in Christ's name and believe what Scripture says about Jesus and your identity in Him. | 25–26 |
 | **O** | Oppose the Devil | Resist temptation, deception and spiritual intimidation through faith and obedience. | 24 |
-| **M** | Maintain Your Freedom | Establish new habits, fellowship, discipleship and a lifestyle of obedience. | 27, Appendix C |
+| **M** | Maintain Your Freedom | Receive help, establish new habits, fellowship, discipleship and a lifestyle of obedience. | 27, Appendix C |
 
 ## The movements in practice
 
@@ -2599,5 +2646,5 @@ You were delivered for a purpose. Now learn to walk in your freedom.
 
 ---
 
-*End of MVP Release 1 — Parts One to Four, Chapters 1–27. Parts Five to Seven and the full 30-Day Freedom and Renewal Programme are planned for a later release.*
+*This field manual covers the foundation and the practice of freedom. The journey continues in everyday obedience.*
 

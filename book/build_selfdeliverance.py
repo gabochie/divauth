@@ -38,15 +38,17 @@ def build_wrap(cfg: dict, pages: int) -> Path:
     title = build.esc(cfg["title"])
     author = build.esc(cfg["author"]).upper()
 
-    doc = f"""<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+    doc = f"""<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>{title} — Cover</title><meta name="author" content="{build.esc(cfg['author'])}">
+<style>
 {build.cover_css(cfg)}
 @page {{ size: {width:.4f}in {height:.4f}in; margin: 0; }}
 body {{ margin: 0; width: {width:.4f}in; height: {height:.4f}in; background: #0a1420; }}
 .panel {{ position: absolute; top: {bleed}in; height: 9in; }}
 .back {{ left: {bleed}in; width: 6in; background: #0a1420; }}
 .spine {{ left: {bleed + 6:.4f}in; width: {spine:.4f}in; background: #0a1420; }}
-.front {{ left: {bleed + 6 + spine:.4f}in; width: 6in; }}
-.front img {{ width: 6in; height: 9in; display: block; }}
+.front {{ left: {bleed + 6 + spine:.4f}in; top: 0; width: {6 + bleed:.4f}in; height: {9 + 2 * bleed:.4f}in; }}
+.front img {{ width: {6 + bleed:.4f}in; height: {9 + 2 * bleed:.4f}in; display: block; }}
 .back {{ box-sizing: border-box; padding: 0.7in 0.6in; color: #e9e1d0; }}
 .kicker {{ font-family: Inter, sans-serif; font-size: 6pt; letter-spacing: .22em;
           text-transform: uppercase; color: #b9a878; }}
@@ -60,6 +62,9 @@ body {{ margin: 0; width: {width:.4f}in; height: {height:.4f}in; background: #0a
            font-size: 11pt; color: #d9b96b; letter-spacing: .18em; }}
 .imprint {{ position: absolute; bottom: 0.55in; left: 0.6in; font-family: Inter, sans-serif;
             font-size: 5.5pt; letter-spacing: .16em; text-transform: uppercase; color: #7e7664; }}
+.barcode {{ position: absolute; right: 0.5in; bottom: 0.45in; width: 2in; height: 1.2in;
+            background: #fff; color: #333; font-family: Inter, sans-serif; font-size: 6pt;
+            text-align: center; padding-top: 0.52in; letter-spacing: .08em; }}
 .spine-in {{ position: absolute; top: 50%; left: 50%; width: 7.6in;
              transform: translate(-50%, -50%) rotate(90deg); text-align: center;
              white-space: nowrap; }}
@@ -82,7 +87,8 @@ body {{ margin: 0; width: {width:.4f}in; height: {height:.4f}in; background: #0a
     &bull; Safeguards: no self-diagnosis, no abandonment of care
   </div>
   <div class="byline">{author}</div>
-  <div class="imprint">{title} &middot; MVP Release 1</div>
+  <div class="imprint">{title} &middot; {build.esc(cfg['edition'])}</div>
+  <div class="barcode">ISBN / BARCODE AREA</div>
 </div>
 <div class="panel spine"><div class="spine-in">
   <span class="spine-title">{title.upper()}</span>
@@ -112,8 +118,39 @@ def main() -> int:
         build.render_body(preface, add_lead=False, context="preface"),
         encoding="unicode", method="html",
     )
-    main_html, entries, epub_sections = build.build_main(cfg, sections, spacer=False)
-    html_str = build.build_html(cfg, preface_html, main_html, entries, None)
+    # Measure real anchor positions so the printed contents page has page
+    # numbers (the same iterative pass build.py:build_pdf performs).
+    spacer = False
+    anchors: dict[str, int] = {}
+    for _ in range(4):
+        main_html, entries, epub_sections = build.build_main(cfg, sections, spacer)
+        entries = [build.toc_entry(0, "Preface", "preface", "front")] + entries
+        html_str = build.build_html(cfg, preface_html, main_html, entries, None)
+        doc = build._weasyprint_html()(string=html_str, base_url=str(build.BOOK_DIR)).render()
+        anchors = {}
+        for i, page in enumerate(doc.pages):
+            for a in page.anchors:
+                anchors.setdefault(a, i)
+        intro_i = anchors.get("intro", 0)
+        if intro_i % 2 == 1 and not spacer:
+            spacer = True
+            continue
+        break
+
+    intro_i = anchors.get("intro", 0)
+    page_numbers: dict[str, str] = {}
+    for entry in entries:
+        idx = anchors.get(entry["id"])
+        if idx is None:
+            continue
+        if entry["kind"] == "front":
+            page_numbers[entry["id"]] = build.roman(idx + 1)
+        else:
+            page_numbers[entry["id"]] = str(idx - intro_i + 1)
+
+    main_html, entries, epub_sections = build.build_main(cfg, sections, spacer)
+    entries = [build.toc_entry(0, "Preface", "preface", "front")] + entries
+    html_str = build.build_html(cfg, preface_html, main_html, entries, page_numbers)
     (OUT / "interior.html").write_text(html_str, encoding="utf-8")
     doc = build._weasyprint_html()(string=html_str, base_url=str(build.BOOK_DIR)).render()
     interior = OUT / f"{prefix}_Interior_6x9.pdf"
@@ -131,13 +168,15 @@ def main() -> int:
     img = Image.open(src).convert("RGB").resize((1800, 2700), Image.LANCZOS)
     img.save(OUT / "cover.jpg", quality=90)
     front = OUT / f"{prefix}_Cover_Front.pdf"
-    img.save(str(front), "PDF", resolution=300.0)
+    img.save(str(front), "PDF", resolution=300.0,
+             title=cfg["title"], author=cfg["author"])
     print(f"  {front.name}")
     wrap = build_wrap(cfg, pages)
     print(f"  {wrap.name}")
 
     epub = build.build_epub(cfg, epub_sections,
-                            out_path=OUT / f"{prefix}.epub", use_cover=True)
+                            out_path=OUT / f"{prefix}.epub", use_cover=True,
+                            identifier=cfg.get("identifier"))
     print(f"  {epub.name}")
     docx = build.build_docx(cfg, preface, sections,
                             out_path=OUT / f"{prefix}.docx")

@@ -6,7 +6,7 @@ Three books are built from this repository. Each has one canonical manuscript an
 |---|---|---|---|---|
 | 1 | **Divine Authority** — *Christ, Demons and Unclean Spirits* | `Divine_Authority_Teaching_Book.md` | `book/output/` | Complete — 170 pp, 18,850 words |
 | 2 | **Seven Sons of Sceva** — *A Case Study in Counterfeit Authority* | generated from §7.5 of book 1 | `book/output/study/` | Complete — companion study, 4 formats |
-| 3 | **Self-Deliverance 101** — *The Freedom Field Manual* (MVP Release 1) | `Self_Deliverance_101_MVP.md` | `Self_Deliverance_101/output/` | Complete draft — 162 pp, 22,744 words |
+| 3 | **Self-Deliverance 101** — *A Field Manual for Personal Spiritual Liberation* | `Self_Deliverance_101_MVP.md` | `Self_Deliverance_101/output/` | First Edition — 162 pp, 23,616 words |
 
 ## Building
 

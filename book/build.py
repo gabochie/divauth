@@ -345,7 +345,7 @@ def build_front_matter(cfg: dict, preface_html: str, entries: list[dict], pages:
 
 <section class="copyright">
   <p class="cr-title">{title}: {subtitle}</p>
-  <p>Copyright © {year} {author}. All rights reserved.</p>
+  <p>Copyright © {year} {cfg.get('copyright_holder', author)}. All rights reserved.</p>
   <p>{edition}.</p>
   <p>No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other non-commercial uses permitted by copyright law.</p>
   <p>Unless otherwise noted, Scripture quotations are from the Authorized (King James) Version, which is in the public domain. Original-language terms are transliterated and, where useful, given in Greek or Hebrew script.</p>
@@ -522,7 +522,7 @@ def build_html(cfg: dict, preface_html: str, main_html: str, entries: list[dict]
 <meta name="author" content="{author}">
 <meta name="description" content="{desc}">
 <meta name="keywords" content="Jesus Christ, authority, deliverance, demons, unclean spirits, spiritual warfare, biblical teaching, Christology">
-<meta name="generator" content="Divine Authority book build">
+<meta name="generator" content="{esc(cfg.get('generator', 'Divine Authority book build'))}">
 <link rel="stylesheet" href="styles/print.css">
 {extra_head}
 </head>
@@ -792,15 +792,18 @@ def build_epub(cfg: dict, epub_sections: list[dict],
     from ebooklib import epub
 
     book = epub.EpubBook()
-    book.set_identifier(identifier or f"divine-authority-{cfg['year']}")
+    book.set_identifier(identifier or cfg.get("identifier") or f"divine-authority-{cfg['year']}")
     book.set_title(cfg["title"])
     book.set_language(cfg["language"])
     book.add_author(cfg["author"])
     book.add_metadata("DC", "publisher", cfg["publisher"])
     book.add_metadata("DC", "date", str(cfg["year"]))
     book.add_metadata("DC", "description", cfg["description"])
-    book.add_metadata("DC", "subject", "Religion / Christian Theology / Christology")
-    book.add_metadata("DC", "subject", "Religion / Christian Ministry / Deliverance")
+    for subject in cfg.get("subjects", [
+        "Religion / Christian Theology / Christology",
+        "Religion / Christian Ministry / Deliverance",
+    ]):
+        book.add_metadata("DC", "subject", subject)
 
     cover = OUT / "cover.jpg"
     if use_cover and cover.exists():
@@ -857,6 +860,13 @@ def build_docx(cfg: dict, preface_body: str, sections: list[dict],
     from docx.shared import Inches, Pt, RGBColor
 
     doc = Document()
+    doc.core_properties.title = cfg["title"]
+    doc.core_properties.author = cfg.get("copyright_holder", cfg["author"])
+    doc.core_properties.subject = cfg.get("description", "")
+    doc.core_properties.keywords = ", ".join(cfg.get("subjects", []))
+    update_fields = OxmlElement("w:updateFields")
+    update_fields.set(qn("w:val"), "true")
+    doc.settings.element.append(update_fields)
 
     sec = doc.sections[0]
     sec.page_width = Inches(6)
@@ -933,7 +943,7 @@ def build_docx(cfg: dict, preface_body: str, sections: list[dict],
     cp.paragraph_format.space_before = Pt(300)
     lines = [
         f"{cfg['title']}: {cfg['subtitle']}",
-        f"Copyright © {cfg['year']} {cfg['author']}. All rights reserved.",
+        f"Copyright © {cfg['year']} {cfg.get('copyright_holder', cfg['author'])}. All rights reserved.",
         f"{cfg['edition']}.",
         "Unless otherwise noted, Scripture quotations are from the Authorized (King James) Version, which is in the public domain.",
         "This book is a pastoral resource, not a substitute for medical, psychiatric, or emergency care.",
