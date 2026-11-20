@@ -1,0 +1,24 @@
+{
+  "title": "Self-Deliverance 101",
+  "author": "Deon ChristoLove (Gabochie)",
+  "edition": "MVP Release 1",
+  "pages": 162,
+  "words": 22744,
+  "chapters": 27,
+  "spine_in": 0.3648,
+  "trim": "6 x 9 in",
+  "cover": "../Self_Deliverance_101/cover_source.png",
+  "outputs": [
+    "Self_Deliverance_101.docx",
+    "Self_Deliverance_101.epub",
+    "Self_Deliverance_101_Cover_Front.pdf",
+    "Self_Deliverance_101_Cover_Wrap.pdf",
+    "Self_Deliverance_101_Interior_6x9.pdf",
+    "build_report.json",
+    "cover.jpg",
+    "cover_wrap.html",
+    "epub_sections.json",
+    "interior.html",
+    "preface.html"
+  ]
+}

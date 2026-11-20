@@ -1,0 +1,18 @@
+{
+  "title": "Self-Deliverance 101",
+  "subtitle": "How to Set Yourself Free from Devils, Demons and Unclean Spirits and Reclaim Your Glorious Destiny in Christ",
+  "subtitle2": "A Field Manual for Personal Spiritual Liberation",
+  "description": "MVP Release 1 — Parts One to Four, Chapters 1-27",
+  "author": "Deon ChristoLove (Gabochie)",
+  "publisher": "Gabochie Books",
+  "year": 2026,
+  "edition": "MVP Release 1",
+  "language": "en",
+  "isbn": "",
+  "trim": { "width_in": 6, "height_in": 9 },
+  "spine_per_page_in": 0.002252,
+  "bleed_in": 0.125,
+  "source": "../Self_Deliverance_101_MVP.md",
+  "cover_source": "../Self_Deliverance_101/cover_source.png",
+  "out_prefix": "Self_Deliverance_101"
+}

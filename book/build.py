@@ -480,11 +480,16 @@ def build_main(cfg: dict, sections: list[dict], spacer: bool) -> tuple[str, list
             continue
 
         # intro / conclusion / summary / generic section
-        sid = {
-            "intro": "intro",
-            "conclusion": "conclusion",
-            "summary": "part-2-summary",
-        }.get(typ, slugify(sec["heading"]))
+        if typ == "intro":
+            sid = "intro"
+        elif typ == "conclusion":
+            sid = "conclusion"
+        elif typ == "summary":
+            bits = sec["kicker"].split()
+            # A part summary must be unique: books can have several of them.
+            sid = f"part-{bits[1].lower()}-summary" if len(bits) > 1 else "summary"
+        else:
+            sid = slugify(sec["heading"])
         entries.append(toc_entry(0, sec["toc"], sid, "main"))
         body_el = render_body(sec["body"], add_lead=True, context=typ)
         body_html = LH.tostring(body_el, encoding="unicode", method="html")

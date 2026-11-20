@@ -1,0 +1,127 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+
+@font-face { font-family: "Cinzel"; src: url("assets/fonts/cinzel-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Cinzel"; src: url("assets/fonts/cinzel-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Cinzel"; src: url("assets/fonts/cinzel-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Cormorant Garamond"; src: url("assets/fonts/cormorant-garamond-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Cormorant Garamond"; src: url("assets/fonts/cormorant-garamond-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Cormorant Garamond"; src: url("assets/fonts/cormorant-garamond-600-italic.ttf"); font-weight: 600; font-style: italic; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/inter-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/inter-600-normal.ttf"); font-weight: 600; }
+
+@page { size: 6in 9in; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Cormorant Garamond", serif; }
+.cover {
+  position: relative; width: 6in; height: 9in; overflow: hidden;
+  background: #0a1420;
+  background-image:
+    radial-gradient(circle at 50% 18%, rgba(201,178,122,0.22) 0%, rgba(201,178,122,0.05) 26%, rgba(10,20,32,0) 52%),
+    linear-gradient(180deg, #0d1a29 0%, #0a1420 55%, #07101a 100%);
+  color: #e9e1d0;
+}
+.cover .frame {
+  position: absolute; top: 0.34in; left: 0.34in; right: 0.34in; bottom: 0.34in;
+  border: 0.7pt solid rgba(201,178,122,0.55);
+}
+.cover .frame-inner {
+  position: absolute; top: 0.39in; left: 0.39in; right: 0.39in; bottom: 0.39in;
+  border: 0.35pt solid rgba(201,178,122,0.3);
+}
+.cover .content {
+  position: absolute; top: 0.9in; left: 0.55in; right: 0.55in;
+  text-align: center;
+}
+.cover .topline {
+  font-family: "Inter"; font-size: 6.4pt; font-weight: 600;
+  letter-spacing: 0.28em; color: #b9a878; text-transform: uppercase;
+}
+.cover .cross {
+  font-family: "Cormorant Garamond"; font-size: 15pt; color: #c9b27a;
+  margin-top: 0.34in; line-height: 1;
+}
+.cover h1 {
+  font-family: "Cinzel"; font-weight: 700; font-size: 49pt; line-height: 1.02;
+  letter-spacing: 0.055em; color: #d9b96b; margin: 0.26in 0 0;
+}
+.cover h1 span { display: block; }
+.cover .rule {
+  width: 1.25in; border-top: 0.8pt solid #c9b27a; margin: 0.24in auto 0.2in;
+}
+.cover .sub {
+  font-family: "Cormorant Garamond"; font-weight: 600; font-size: 18.5pt;
+  line-height: 1.18; color: #efe7d6;
+}
+.cover .sub2 {
+  font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600;
+  font-size: 12.5pt; color: #c7bda8; margin-top: 0.06in;
+}
+.cover .desc {
+  font-family: "Inter"; font-size: 6.3pt; font-weight: 400; letter-spacing: 0.14em;
+  text-transform: uppercase; color: #9d957f; line-height: 1.7;
+  margin: 0.34in auto 0; max-width: 4.1in;
+}
+.cover .author {
+  position: absolute; left: 0.55in; right: 0.55in; bottom: 0.72in;
+  text-align: center;
+  font-family: "Cinzel"; font-weight: 600; font-size: 13pt;
+  letter-spacing: 0.3em; color: #d9b96b;
+}
+.cover .imprint {
+  position: absolute; left: 0.55in; right: 0.55in; bottom: 0.48in;
+  text-align: center;
+  font-family: "Inter"; font-size: 5.8pt; letter-spacing: 0.2em;
+  text-transform: uppercase; color: #7e7664;
+}
+
+@page { size: 12.6148in 9.2500in; margin: 0; }
+body { margin: 0; width: 12.6148in; height: 9.2500in; background: #0a1420; }
+.panel { position: absolute; top: 0.125in; height: 9in; }
+.back { left: 0.125in; width: 6in; background: #0a1420; }
+.spine { left: 6.1250in; width: 0.3648in; background: #0a1420; }
+.front { left: 6.4898in; width: 6in; }
+.front img { width: 6in; height: 9in; display: block; }
+.back { box-sizing: border-box; padding: 0.7in 0.6in; color: #e9e1d0; }
+.kicker { font-family: Inter, sans-serif; font-size: 6pt; letter-spacing: .22em;
+          text-transform: uppercase; color: #b9a878; }
+.headline { font-family: "Cormorant Garamond", serif; font-size: 21pt; font-weight: 600;
+             line-height: 1.2; margin-top: 0.25in; color: #efe7d6; }
+.blurb { font-family: "EB Garamond", serif; font-size: 9pt; line-height: 1.5;
+          margin-top: 0.22in; color: #d8d0bf; }
+.points { margin-top: 0.22in; font-family: Inter, sans-serif; font-size: 7pt;
+           line-height: 1.7; color: #cfc6b3; }
+.byline { position: absolute; bottom: 0.8in; left: 0.6in; font-family: Cinzel, serif;
+           font-size: 11pt; color: #d9b96b; letter-spacing: .18em; }
+.imprint { position: absolute; bottom: 0.55in; left: 0.6in; font-family: Inter, sans-serif;
+            font-size: 5.5pt; letter-spacing: .16em; text-transform: uppercase; color: #7e7664; }
+.spine-in { position: absolute; top: 50%; left: 50%; width: 7.6in;
+             transform: translate(-50%, -50%) rotate(90deg); text-align: center;
+             white-space: nowrap; }
+.spine-title { font-family: Cinzel, serif; font-size: 10pt; letter-spacing: .2em; color: #d9b96b; }
+.spine-author { font-family: Inter, sans-serif; font-size: 6pt; letter-spacing: .2em;
+                 color: #c7bda8; margin-left: .3in; }
+</style></head><body>
+<div class="panel back">
+  <div class="kicker">A Field Manual for Personal Spiritual Liberation</div>
+  <div class="headline">You do not have to remain in bondage to what Christ has already defeated.</div>
+  <div class="blurb">
+    <p>Deliverance is the beginning of a transformed life, not the final destination.
+    This field manual walks through the authority of Christ, the nature of bondage,
+    and a biblical, safe, practical response.</p>
+  </div>
+  <div class="points">
+    &bull; F.R.E.E.D.O.M. — seven movements toward freedom<br>
+    &bull; Twenty-seven chapters across four parts<br>
+    &bull; Exercises, tools and a 30-day renewal starter<br>
+    &bull; Safeguards: no self-diagnosis, no abandonment of care
+  </div>
+  <div class="byline">DEON CHRISTOLOVE (GABOCHIE)</div>
+  <div class="imprint">Self-Deliverance 101 &middot; MVP Release 1</div>
+</div>
+<div class="panel spine"><div class="spine-in">
+  <span class="spine-title">SELF-DELIVERANCE 101</span>
+  <span class="spine-author">DEON CHRISTOLOVE (GABOCHIE)</span>
+</div></div>
+<div class="panel front"><img src="../Self_Deliverance_101/cover_source.png" alt="Cover"></div>
+</body></html>
