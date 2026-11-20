@@ -7,6 +7,7 @@ Three books are built from this repository. Each has one canonical manuscript an
 | 1 | **Divine Authority** — *Christ, Demons and Unclean Spirits* | `Divine_Authority_Teaching_Book.md` | `book/output/` | Complete — 170 pp, 18,850 words |
 | 2 | **Seven Sons of Sceva** — *A Case Study in Counterfeit Authority* | generated from §7.5 of book 1 | `book/output/study/` | Complete — companion study, 4 formats |
 | 3 | **Self-Deliverance 101** — *A Field Manual for Personal Spiritual Liberation* | `Self_Deliverance_101_MVP.md` | `Self_Deliverance_101/output/` | First Edition — 162 pp, 23,616 words |
+| 4 | **Soft Life God's Way** — *a field manual for Christian women* | `Soft_Life_Gods_Way_MVP.md` | `Soft Life God's Way/output/` | Volume One — 139 pp, c. 15,800 words |
 
 ## Building
 
@@ -21,6 +22,9 @@ python build_study.py
 
 # book 3 — Self-Deliverance 101 MVP
 python build_selfdeliverance.py
+
+# book 4 — Soft Life God's Way
+python build_softlife.py
 ```
 
 Windows dependencies for the PDF stages:

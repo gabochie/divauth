@@ -1,0 +1,25 @@
+{
+  "title": "Soft Life God's Way",
+  "subtitle": "How to trade constant hustle and anxiety for unshakable peace, divine alignment, and a grace-filled life—without chasing materialism.",
+  "subtitle2": "A Field Manual for Rest, Boundaries and Divine Alignment",
+  "description": "A Christ-centred field manual for Christian women who are done with survival mode — and ready for rest, peace and a life that belongs to God.",
+  "author": "Deon ChristoLove (aka Gabochie)",
+  "copyright_holder": "Gideon Abochie, writing as Deon ChristoLove (aka Gabochie)",
+  "publisher": "Gabochie Books",
+  "year": 2026,
+  "edition": "First Edition",
+  "language": "en-US",
+  "identifier": "soft-life-gods-way-2026",
+  "isbn": "",
+  "subjects": [
+    "Religion / Christian Life / Women",
+    "Religion / Christian Life / Spiritual Growth"
+  ],
+  "generator": "Soft Life God's Way book build",
+  "trim": { "width_in": 6, "height_in": 9 },
+  "spine_per_page_in": 0.002252,
+  "bleed_in": 0.125,
+  "source": "../Soft_Life_Gods_Way_MVP.md",
+  "cover_source": "../Soft Life God's Way/cover_source.png",
+  "out_prefix": "Soft_Life_Gods_Way"
+}
