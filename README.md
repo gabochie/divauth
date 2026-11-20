@@ -4,6 +4,8 @@ Four books are built from this repository. Each has one canonical manuscript and
 
 **Before any release, check [`OUTSTANDING.md`](OUTSTANDING.md)** — it tracks the blockers and decisions still open across all four books.
 
+Future products that can be built from *Soft Life God's Way* are catalogued in [`Soft Life God's Way/Ecosystem_Products.md`]("Soft Life God's Way/Ecosystem_Products.md") (plan only — nothing built yet).
+
 | # | Book | Canonical manuscript | Outputs | Status |
 |---|---|---|---|---|
 | 1 | **Divine Authority** — *Christ, Demons and Unclean Spirits* | `Divine_Authority_Teaching_Book.md` | `book/output/` | Complete — 170 pp, 18,850 words |
