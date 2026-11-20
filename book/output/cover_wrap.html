@@ -1,0 +1,143 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@font-face { font-family: "Cinzel"; src: url("assets/fonts/cinzel-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Cinzel"; src: url("assets/fonts/cinzel-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Cinzel"; src: url("assets/fonts/cinzel-700-normal.ttf"); font-weight: 700; }
+@font-face { font-family: "Cormorant Garamond"; src: url("assets/fonts/cormorant-garamond-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Cormorant Garamond"; src: url("assets/fonts/cormorant-garamond-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Cormorant Garamond"; src: url("assets/fonts/cormorant-garamond-600-italic.ttf"); font-weight: 600; font-style: italic; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/inter-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/inter-600-normal.ttf"); font-weight: 600; }
+
+@page { size: 6in 9in; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: "Cormorant Garamond", serif; }
+.cover {
+  position: relative; width: 6in; height: 9in; overflow: hidden;
+  background: #0a1420;
+  background-image:
+    radial-gradient(circle at 50% 18%, rgba(201,178,122,0.22) 0%, rgba(201,178,122,0.05) 26%, rgba(10,20,32,0) 52%),
+    linear-gradient(180deg, #0d1a29 0%, #0a1420 55%, #07101a 100%);
+  color: #e9e1d0;
+}
+.cover .frame {
+  position: absolute; top: 0.34in; left: 0.34in; right: 0.34in; bottom: 0.34in;
+  border: 0.7pt solid rgba(201,178,122,0.55);
+}
+.cover .frame-inner {
+  position: absolute; top: 0.39in; left: 0.39in; right: 0.39in; bottom: 0.39in;
+  border: 0.35pt solid rgba(201,178,122,0.3);
+}
+.cover .content {
+  position: absolute; top: 0.9in; left: 0.55in; right: 0.55in;
+  text-align: center;
+}
+.cover .topline {
+  font-family: "Inter"; font-size: 6.4pt; font-weight: 600;
+  letter-spacing: 0.28em; color: #b9a878; text-transform: uppercase;
+}
+.cover .cross {
+  font-family: "Cormorant Garamond"; font-size: 15pt; color: #c9b27a;
+  margin-top: 0.34in; line-height: 1;
+}
+.cover h1 {
+  font-family: "Cinzel"; font-weight: 700; font-size: 49pt; line-height: 1.02;
+  letter-spacing: 0.055em; color: #d9b96b; margin: 0.26in 0 0;
+}
+.cover h1 span { display: block; }
+.cover .rule {
+  width: 1.25in; border-top: 0.8pt solid #c9b27a; margin: 0.24in auto 0.2in;
+}
+.cover .sub {
+  font-family: "Cormorant Garamond"; font-weight: 600; font-size: 18.5pt;
+  line-height: 1.18; color: #efe7d6;
+}
+.cover .sub2 {
+  font-family: "Cormorant Garamond"; font-style: italic; font-weight: 600;
+  font-size: 12.5pt; color: #c7bda8; margin-top: 0.06in;
+}
+.cover .desc {
+  font-family: "Inter"; font-size: 6.3pt; font-weight: 400; letter-spacing: 0.14em;
+  text-transform: uppercase; color: #9d957f; line-height: 1.7;
+  margin: 0.34in auto 0; max-width: 4.1in;
+}
+.cover .author {
+  position: absolute; left: 0.55in; right: 0.55in; bottom: 0.72in;
+  text-align: center;
+  font-family: "Cinzel"; font-weight: 600; font-size: 13pt;
+  letter-spacing: 0.3em; color: #d9b96b;
+}
+.cover .imprint {
+  position: absolute; left: 0.55in; right: 0.55in; bottom: 0.48in;
+  text-align: center;
+  font-family: "Inter"; font-size: 5.8pt; letter-spacing: 0.2em;
+  text-transform: uppercase; color: #7e7664;
+}
+
+@page { size: 12.6103in 9.2500in; margin: 0; }
+body { width: 12.6103in; height: 9.2500in; background: #0a1420; }
+.panel { position: absolute; top: 0.125in; width: 6in; height: 9in; }
+.back { left: 0.125in; }
+.spine { left: 6.1250in; width: 0.3603in; height: 9in; top: 0.125in; }
+.front { left: 6.4853in; }
+.back, .spine, .front { overflow: hidden; }
+.back { background: #0a1420; background-image: linear-gradient(180deg,#0d1a29 0%,#0a1420 60%,#07101a 100%); }
+.spine { background: #0a1420; border-left: 0.4pt solid rgba(201,178,122,0.28); border-right: 0.4pt solid rgba(201,178,122,0.28); }
+.back .inner, .front .inner { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.back .frame, .front .frame { position: absolute; top: 0.34in; left: 0.34in; right: 0.34in; bottom: 0.34in; border: 0.7pt solid rgba(201,178,122,0.55); }
+.back .frame-inner, .front .frame-inner { position: absolute; top: 0.39in; left: 0.39in; right: 0.39in; bottom: 0.39in; border: 0.35pt solid rgba(201,178,122,0.3); }
+.back .content { position: absolute; top: 0.78in; left: 0.58in; right: 0.58in; color: #e9e1d0; }
+.back .kicker { font-family: "Inter"; font-size: 6.2pt; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #b9a878; }
+.back .headline { font-family: "Cormorant Garamond"; font-weight: 600; font-size: 20pt; line-height: 1.18; color: #efe7d6; margin-top: 0.18in; }
+.back .blurb { font-family: "EB Garamond", serif; font-size: 9.2pt; line-height: 1.5; color: #d8d0bf; margin-top: 0.16in; }
+.back .blurb p { margin: 0 0 6pt; text-indent: 0; }
+.back .bullets { margin-top: 0.16in; }
+.back .bullets div { font-family: "Inter"; font-size: 7.2pt; line-height: 1.55; color: #cfc6b3; margin: 0 0 3pt; }
+.back .bullets b { color: #d9b96b; font-weight: 600; }
+.back .author { position: absolute; left: 0.58in; right: 0.58in; bottom: 0.86in; font-family: "Cinzel"; font-weight: 600; font-size: 11pt; letter-spacing: 0.26em; color: #d9b96b; }
+.back .imprint { position: absolute; left: 0.58in; right: 0.58in; bottom: 0.62in; font-family: "Inter"; font-size: 5.6pt; letter-spacing: 0.18em; text-transform: uppercase; color: #7e7664; }
+.back .barcode { position: absolute; right: 0.5in; bottom: 0.45in; width: 2in; height: 1.2in; background: #fff; color: #333; font-family: "Inter"; font-size: 6pt; text-align: center; padding-top: 0.52in; letter-spacing: 0.08em; }
+.spine .spine-inner { position: absolute; top: 50%; left: 50%; width: 7.6in; transform: translate(-50%, -50%) rotate(90deg); text-align: center; white-space: nowrap; }
+.spine .spine-title { font-family: "Cinzel"; font-weight: 600; font-size: 10.5pt; letter-spacing: 0.22em; color: #d9b96b; }
+.spine .spine-author { font-family: "Inter"; font-size: 6.6pt; letter-spacing: 0.2em; color: #c7bda8; margin-left: 0.35in; }
+</style></head>
+<body>
+<div class="panel back"><div class="inner">
+  <div class="frame"></div><div class="frame-inner"></div>
+  <div class="content">
+    <div class="kicker">A Christ-Centred Theology and Practice</div>
+    <div class="headline">The King is not merely stronger.<br>He is Lord.</div>
+    <div class="blurb">
+      <p>Jesus did not negotiate with demons or depend on their cooperation. He commanded, and they obeyed. <i>Divine Authority</i> recovers that vision for the church today: a deliverance ministry that begins with the identity of Christ, not the activity of the enemy.</p>
+      <p>Drawing on the Gospels, the Epistles, and the original biblical languages, this book joins careful theology to sober pastoral practice.</p>
+    </div>
+    <div class="bullets">
+      <div><b>·</b> A biblical theology of authority, power, and dominion</div>
+      <div><b>·</b> Seven encounters with demons and unclean spirits</div>
+      <div><b>·</b> A safe, ethical, person-centred ministry protocol</div>
+      <div><b>·</b> A complete ten-lesson teaching curriculum</div>
+      <div><b>·</b> Forms, checklists, aftercare plans, and study questions</div>
+    </div>
+  </div>
+  <div class="author">GABOCHIE</div>
+  <div class="imprint">Gabochie Books</div>
+  <div class="barcode">ISBN / BARCODE AREA</div>
+</div></div>
+<div class="panel spine"><div class="spine-inner">
+  <span class="spine-title">DIVINE AUTHORITY</span><span class="spine-author">GABOCHIE</span>
+</div></div>
+<div class="panel front"><div class="inner">
+  <div class="frame"></div><div class="frame-inner"></div>
+  <div class="content">
+    <div class="topline">Biblical Teaching · Christology · Spiritual Authority</div>
+    <div class="cross"><span class="diamond"></span></div>
+    <h1><span>DIVINE</span><span>AUTHORITY</span></h1>
+    <div class="rule"></div>
+    <div class="sub">Christ, Demons and Unclean Spirits</div>
+    <div class="sub2">His Authority and Power Over Them</div>
+    <div class="desc">A Christ-Centred Teaching Book and Practical Handbook for Deliverance Ministry</div>
+  </div>
+  <div class="author">GABOCHIE</div>
+  <div class="imprint">Gabochie Books</div>
+</div></div>
+</body></html>

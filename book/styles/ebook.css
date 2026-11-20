@@ -1,0 +1,73 @@
+@font-face { font-family: "EB Garamond"; src: url("../assets/fonts/eb-garamond-400-normal.ttf"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "EB Garamond"; src: url("../assets/fonts/eb-garamond-400-italic.ttf"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "EB Garamond"; src: url("../assets/fonts/eb-garamond-600-normal.ttf"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "DejaVu Serif"; src: url("../assets/fonts/dejavu-serif-400-normal.ttf"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "Noto Serif Hebrew"; src: url("../assets/fonts/noto-serif-hebrew-400-normal.ttf"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "DejaVu Sans"; src: url("../assets/fonts/dejavu-sans-400-normal.ttf"); font-weight: 400; font-style: normal; }
+
+body {
+  font-family: "EB Garamond", "DejaVu Serif", "Noto Serif Hebrew", "DejaVu Sans", Georgia, serif;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #1d1d1b;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 { font-family: Georgia, "Times New Roman", serif; color: #12263a; line-height: 1.15; }
+h1 { font-size: 1.9em; margin: 0 0 0.7em; }
+h2 { font-size: 1.3em; margin: 1.5em 0 0.4em; }
+h3 { font-size: 0.85em; letter-spacing: 0.08em; text-transform: uppercase; color: #8a6a2f; margin: 1.3em 0 0.4em; }
+
+p { margin: 0; text-indent: 1.2em; text-align: justify; hyphens: auto; hyphenate-character: "-"; }
+p.lead, h1 + p, h2 + p, h3 + p, blockquote + p, ul + p, ol + p, table + p, hr + p, .label + p, .callout + p { text-indent: 0; }
+p.runin { text-indent: 0; margin-top: 0.9em; }
+p.pull { text-indent: 0; text-align: center; font-size: 1.25em; font-weight: bold; color: #12263a; margin: 1.4em 0; }
+
+em { font-style: italic; }
+strong { font-weight: 600; }
+
+blockquote {
+  font-style: italic;
+  border-left: 3px solid #c9b27a;
+  margin: 1.1em 0 1.1em 0.3em;
+  padding: 0.2em 0 0.2em 0.9em;
+  color: #33312c;
+}
+blockquote p { text-indent: 0; }
+blockquote.form {
+  font-style: normal; background: #faf8f2; border: 1px solid #e2dccd;
+  border-left: 4px solid #c9b27a; padding: 0.8em 1em;
+}
+
+.callout {
+  background: #f7f3e9;
+  border-left: 4px solid #b08a3e;
+  padding: 0.7em 0.9em;
+  margin: 1.2em 0;
+}
+.callout h3 { margin-top: 0; }
+
+p.label {
+  font-family: sans-serif; font-size: 0.72em; font-weight: bold;
+  letter-spacing: 0.08em; text-transform: uppercase; color: #8a6a2f;
+  margin: 1.1em 0 0.3em; text-indent: 0;
+}
+
+ul, ol { margin: 0.5em 0 0.6em; padding-left: 1.3em; }
+li { margin: 0.18em 0; }
+li.task { list-style: none; margin-left: -1.1em; }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.82em; margin: 1em 0; }
+th { text-align: left; border-top: 1px solid #2b2a26; border-bottom: 1px solid #2b2a26; padding: 0.3em 0.4em; }
+td { border-bottom: 1px solid #ded7c7; padding: 0.28em 0.4em; vertical-align: top; }
+
+code { font-family: monospace; font-size: 0.78em; background: #f1ede3; padding: 0 2px; overflow-wrap: anywhere; }
+code.url { font-size: 0.65em; }
+
+hr { border: 0; border-top: 1px solid #d8d2c4; width: 35%; margin: 1.5em auto; }
+
+a { color: #7a5b24; text-decoration: none; }
+
+.chapter-title .ch-num { display: block; font-family: sans-serif; font-size: 0.42em; letter-spacing: 0.16em; text-transform: uppercase; color: #8a6a2f; margin-bottom: 0.5em; }
+.part-title { text-align: center; margin-top: 2em; }

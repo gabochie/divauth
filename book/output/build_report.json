@@ -1,0 +1,23 @@
+{
+  "title": "Divine Authority",
+  "author": "Gabochie",
+  "pages": 160,
+  "words": 16946,
+  "spine_in": 0.3603,
+  "trim": "6 x 9 in",
+  "outputs": [
+    "interior.html",
+    "Divine_Authority_Interior_6x9.pdf",
+    "epub_sections.json",
+    "preface.html",
+    "Divine_Authority_Cover_Front.pdf",
+    "cover.jpg",
+    "Divine_Authority_Cover_Wrap.pdf",
+    "cover_wrap.html",
+    "Divine_Authority.epub",
+    "Divine_Authority.docx",
+    "build_report.json",
+    "toc.txt",
+    "toc2.txt"
+  ]
+}
