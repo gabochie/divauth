@@ -80,7 +80,9 @@ def wrap_html(cfg: dict, pages: int) -> str:
     height = 9 + 2 * bleed
     title = build.esc(cfg["title"])
     author = build.esc(cfg["author"]).upper()
-    return f"""<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+    return f"""<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>{title} — Cover</title><meta name="author" content="{build.esc(cfg['author'])}">
+<style>
 {COVER_CSS}
 @page {{ size: {width:.4f}in {height:.4f}in; margin:0; }}
 body {{ margin:0; width:{width:.4f}in; height:{height:.4f}in; background:#f3efe6; color:#2d3a35; }}
@@ -97,8 +99,8 @@ body {{ margin:0; width:{width:.4f}in; height:{height:.4f}in; background:#f3efe6
 .blurb {{ font-family:"Cormorant Garamond",serif; font-size:9.5pt; line-height:1.5;
           margin-top:0.2in; }}
 .points {{ margin-top:0.18in; font-family:Inter,sans-serif; font-size:7pt; line-height:1.7; }}
-.byline {{ position:absolute; bottom:0.8in; left:0.55in; font-family:Cinzel,serif;
-           font-size:10pt; letter-spacing:.16em; }}
+.byline {{ position:absolute; bottom:0.8in; left:0.55in; right:0.55in;
+           font-family:Cinzel,serif; font-size:8.5pt; letter-spacing:.08em; }}
 .imprint {{ position:absolute; bottom:0.5in; left:0.55in; font-family:Inter,sans-serif;
             font-size:5.5pt; letter-spacing:.16em; text-transform:uppercase; color:#8a8878; }}
 .spine {{ left:{bleed + 6:.4f}in; width:{spine:.4f}in; background:#f3efe6;
@@ -192,7 +194,7 @@ def main() -> int:
     # Supplied cover artwork -> print front PDF + EPUB JPEG
     src = build.BOOK_DIR / cfg["cover_source"]
     img = Image.open(src).convert("RGB").resize((1800, 2700), Image.LANCZOS)
-    img.save(OUT / "cover.jpg", quality=90)
+    img.save(OUT / "cover.jpg", quality=82, optimize=True)
     front = OUT / f"{prefix}_Cover_Front.pdf"
     img.save(str(front), "PDF", resolution=300.0,
              title=cfg["title"], author=cfg["author"])
@@ -203,6 +205,30 @@ def main() -> int:
     wrap_pdf = OUT / f"{prefix}_Cover_Wrap.pdf"
     build._weasyprint_html()(string=wrap, base_url=str(build.BOOK_DIR)).write_pdf(str(wrap_pdf))
     print(f"  {wrap_pdf.name}")
+
+    # EPUB readers should open on a title page, not on the Introduction.
+    title_page = (
+        f'<h1 class="chapter-title">{build.esc(cfg["title"])}</h1>'
+        f'<p>{build.esc(cfg["subtitle"])}</p>'
+        f'<p><em>{build.esc(cfg["subtitle2"])}</em></p>'
+        f'<p>{build.esc(cfg["author"])}</p>'
+    )
+    copyright_page = (
+        '<h1 class="chapter-title">Copyright</h1>'
+        f'<p>Copyright © {cfg["year"]} {build.esc(cfg["copyright_holder"])}. '
+        'All rights reserved.</p>'
+        f'<p>{build.esc(cfg["edition"])}.</p>'
+        '<p>Unless otherwise noted, Scripture quotations are from the Authorized '
+        '(King James) Version, which is in the public domain.</p>'
+        '<p>This book is a pastoral and practical resource. It is not a substitute '
+        'for medical, psychiatric, or emergency care.</p>'
+        f'<p>Published by {build.esc(cfg["publisher"])}.</p>'
+    )
+    epub_sections = [
+        {"id": "titlepage", "title": "Title page", "html": title_page},
+        {"id": "copyright", "title": "Copyright", "html": copyright_page},
+        {"id": "preface", "title": "Preface", "html": preface_html},
+    ] + epub_sections
 
     epub = build.build_epub(cfg, epub_sections, out_path=OUT / f"{prefix}.epub",
                             use_cover=True, identifier=cfg.get("identifier"))

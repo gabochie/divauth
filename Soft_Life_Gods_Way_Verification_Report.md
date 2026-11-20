@@ -65,6 +65,23 @@ All **three subtitle options** are preserved verbatim, including the original re
 3. **Cover artwork** — the supplied illustration (`cover_source.png`, 1024 × 1536 px) is used. It carries the primary subtitle (option 1) verbatim. The artwork has been upscaled to 1800 × 2700 for a 6 × 9 trim at 300 dpi, but the source detail is limited; a native-resolution file is desirable for a physical print run. The filename also yielded a fourth positioning variant, *"A Joyful Family Journey"*, preserved in `Subtitle_Options.md` but not adopted as the subtitle.
 4. **Audience** — written for Christian women, per the editorial decision; options 2 and 3 remain available for broader positioning.
 
-## 7. Verdict
+## 7. Presentation audit fixes applied
 
-**Ready for a Volume One prelaunch.** The manuscript is Christ-centred, every quotation is verified, the three subtitles are preserved, the safeguards are explicit, and the packaging builds cleanly.
+A critical audit of the rendered proofs found and corrected:
+
+| Defect | Fix |
+|---|---|
+| Left-hand print pages carried book 1's running header "DIVINE AUTHORITY" | Running header is now config-driven in `build_html()`; book 4 prints "SOFT LIFE GOD'S WAY", book 3 its own title |
+| Back-cover author line was clipped | Byline reduced to 8.5 pt with tighter tracking; now fully legible |
+| Teaching Notes callouts split across pages, leaving two-line pages | `break-inside: avoid` added to `.callout` in `print.css` |
+| EPUB creator used the pen name while DOCX used the legal name | DOCX core author now uses the public author form; the legal name remains in the copyright line |
+| Cover wrap PDF had no title/author metadata | Added both |
+| EPUB cover JPEG was 1.07 MB | Recompressed to quality 82; EPUB now 846 KB |
+| EPUB opened at the Introduction with no title or copyright page | Title page, copyright page and preface added to the EPUB spine |
+| HTML keywords were book 1's topic list | Keywords are now config-driven |
+
+All four books were rebuilt after the shared `build.py` and `print.css` changes.
+
+## 8. Verdict
+
+**Ready for a Volume One prelaunch.** The manuscript is Christ-centred, all 106 quotations are verified, the three subtitles are preserved, the safeguards are explicit, and the packaging now builds cleanly. Outstanding production items are the ISBN and a native-resolution cover file.

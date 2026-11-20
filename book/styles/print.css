@@ -368,6 +368,7 @@ blockquote.form p { margin: 0 0 3pt; }
   border-left: 3pt solid #b08a3e;
   padding: 10pt 13pt 10pt 14pt;
   margin: 1.15em 0;
+  break-inside: avoid;
 }
 .callout h3 {
   margin: 0 0 6pt; color: #8a6a2f; font-size: 8pt; letter-spacing: 0.12em;

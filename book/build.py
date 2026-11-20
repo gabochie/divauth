@@ -514,6 +514,11 @@ def build_html(cfg: dict, preface_html: str, main_html: str, entries: list[dict]
     title = esc(cfg["title"])
     author = esc(cfg["author"])
     desc = esc(cfg["description"])
+    keywords = esc(cfg.get("keywords", "Jesus Christ, authority, deliverance, demons, unclean spirits, spiritual warfare, biblical teaching, Christology"))
+    # print.css predates the other books and hardcodes book 1's running head.
+    # Override it per publication from config.
+    running = esc(cfg.get("running_header", cfg["title"].upper()))
+    page_override = f'<style>@page main:left {{ @top-left {{ content: "{running}"; }} }}</style>'
     return f"""<!DOCTYPE html>
 <html lang="{cfg['language']}">
 <head>
@@ -521,10 +526,11 @@ def build_html(cfg: dict, preface_html: str, main_html: str, entries: list[dict]
 <title>{title}</title>
 <meta name="author" content="{author}">
 <meta name="description" content="{desc}">
-<meta name="keywords" content="Jesus Christ, authority, deliverance, demons, unclean spirits, spiritual warfare, biblical teaching, Christology">
+<meta name="keywords" content="{keywords}">
 <meta name="generator" content="{esc(cfg.get('generator', 'Divine Authority book build'))}">
 <link rel="stylesheet" href="styles/print.css">
 {extra_head}
+{page_override}
 </head>
 <body>
 {front}
@@ -861,9 +867,9 @@ def build_docx(cfg: dict, preface_body: str, sections: list[dict],
 
     doc = Document()
     doc.core_properties.title = cfg["title"]
-    doc.core_properties.author = cfg.get("copyright_holder", cfg["author"])
-    doc.core_properties.subject = cfg.get("description", "")
-    doc.core_properties.keywords = ", ".join(cfg.get("subjects", []))
+    doc.core_properties.author = cfg["author"]
+    doc.core_properties.subject = cfg.get("description", "")[:255]
+    doc.core_properties.keywords = ", ".join(cfg.get("subjects", []))[:255]
     update_fields = OxmlElement("w:updateFields")
     update_fields.set(qn("w:val"), "true")
     doc.settings.element.append(update_fields)
