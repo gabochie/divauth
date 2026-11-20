@@ -4,8 +4,9 @@
 
 **Source document:** `DivAuth` (987 lines, 39,346 bytes)
 **Companion summary:** `diva`
+**Companion studies:** `7SonsSceva` (148 lines), `casestudy` (57 lines) — verified separately in §11
 **Verification date:** 20 November 2026
-**Status of source files:** Original `DivAuth` and `diva` remain untouched. Backups exist as `DivAuth.backup` and `diva.backup`. The teaching book reproduces and expands every substantive section of the original.
+**Status of source files:** Original `DivAuth` and `diva` remain untouched, as do `7SonsSceva` and `casestudy`. Backups exist as `DivAuth.backup` and `diva.backup`. The teaching book reproduces and expands every substantive section of each source.
 
 ---
 
@@ -247,7 +248,49 @@ These safeguards are not a dilution of the teaching. They are part of faithful p
 
 ---
 
-## 11. Conclusion
+## 11. Verification of the companion source documents
+
+Two further source documents were added to the repository and folded into the teaching book: `7SonsSceva` and `casestudy`. Both were captured as AI-assistant transcripts and both contain retrieval artefacts. Like `DivAuth` and `diva`, both are preserved unedited.
+
+**Method note:** the live web-search tool used for the original report returned HTTP 402 in this pass, so it was not used. Verification was instead done by fetching specific reference texts directly — BibleHub's interlinear and KJV parallel pages, the Ellicott and Pulpit commentary notes reproduced there, the *Ephesia grammata* reference article, and the text of Josephus itself. Every item below was checked against a retrieved text rather than against recall.
+
+### 11.1 What each source contributed
+
+| Source | What it contained | Where it now sits |
+|---|---|---|
+| `7SonsSceva` | The Acts 19 narrative; Sceva's identity and title; first-century Jewish exorcism; the magical culture of Ephesus; a three-way comparison of Jesus, Paul and the itinerant exorcists; the Armour of God in its Ephesian setting | §7.5 and §9.1 |
+| `casestudy` | A catalogue of twelve individual deliverance accounts; a note on 1 Samuel 16:14–23; a Sceva narrative | §4.10. The Sceva narrative duplicates `7SonsSceva` and was not separately reproduced. |
+
+### 11.2 Verified claims
+
+| Claim carried into the book | Source checked | Result |
+|---|---|---|
+| Acts 19:13 KJV, "We adjure you by Jesus whom Paul preacheth." | BibleHub KJV parallel text | Exact match |
+| Acts 19:14 KJV, "seven sons of [one] Sceva, a Jew, [and] chief of the priests" | BibleHub parallel text | Exact match |
+| The Greek of Acts 19:14 is Σκευᾶ, Ἰουδαίου ἀρχιερέως | BibleHub interlinear | Verified |
+| Acts 19:19 KJV, "fifty thousand pieces of silver" | BibleHub parallel text | Exact match |
+| The Greek of Acts 19:19 is πέντε … ἀργυρίου, "five myriads of silver" | BibleHub interlinear | Verified |
+| Fifty thousand drachmas ≈ fifty thousand days' wages | A drachma or denarius as a day's wage (Matthew 20:2) | Verified **on the drachma reading** |
+| The coin identification is not unanimous | Ellicott takes the Attic drachma; the Pulpit Commentary records the Jewish-shekel alternative and states the disagreement | Verified — the book now states both readings |
+| "Ephesian Letters" as charms: "small slips of parchment in silk bags, on which were written strange cabalistical words, of little or of lost meaning" | Ellicott on Acts 19:19 | Quotation exact |
+| Ancient exorcists stacked names — "the name of the Most High God, or that of the archangels Raphael or Michael, which were used by others" | Ellicott on Acts 19:13 | Quotation exact |
+| Josephus, *Antiquities* 8.2.5: Eleazar exorcising before Vespasian, using a ring bearing a root attributed to Solomon, drawing the demon out through the nostrils, adjuring it in Solomon's name, and setting a basin of water to be overturned as proof | The text of Josephus, *Ant.* 8.2.5, and the Pulpit Commentary's independent summary of it | Verified |
+| The Ephesian setting — Temple of Artemis; magic as a major local trade; *grammata Ephesia* attested from the fifth or fourth century BC and associated with the statue of Artemis at Ephesus; Plutarch reporting Magi reciting them over those thought possessed | *Ephesia grammata* reference article and Ellicott | Verified |
+
+### 11.3 Claims not carried forward
+
+- **The Hebrew-name theories for Sceva** (a form of Shecaniah; a derivation from the Hebrew word for "fox"). The source itself states that neither has broad scholarly support, and neither could be independently confirmed in this pass. Omitted from the book rather than printed with a caveat.
+- **The citation "Massachusetts Institute of Technology"** in `7SonsSceva`. A retrieval artefact with no evident connection to the subject. Discarded.
+- **The chat-form prompts** closing each block in both files ("Would you like to explore …?"). Interface artefacts, not content. Discarded.
+- **The *Scaeva* "left-handed" etymology.** Commonly given, but it could not be independently confirmed here. **Carried forward and explicitly labelled in the book as a scholarly proposal rather than a documented fact** (§7.5).
+
+### 11.4 Effect on the book
+
+§7.5 and §9.1 now carry the historical and cultural material with quotations attributed to named sources, inferences labelled as inferences, and a "What the account does not teach" section against the common misreadings. §4.10 presents the catalogue as reference material, not as a technique list.
+
+---
+
+## 12. Conclusion
 
 The original research is trustworthy enough to build on. Its scriptural quotations are accurate, its Greek and Hebrew terms are correctly identified, and its central Christ-centred thesis is biblically sound. The teaching book that follows preserves every substantive section of the original and adds:
 

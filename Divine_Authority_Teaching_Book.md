@@ -51,7 +51,7 @@ Scripture quotations are from the Authorized (King James) Version unless otherwi
 - Hebrew: Brown-Driver-Briggs, Strong's, and standard Hebrew lexicons.
 - Where a claim is a theological inference rather than a lexical fact, the book says so.
 
-A fuller verification report is provided separately in `Research_Verification_Report.md`. The original research file `DivAuth` and the summary `diva` are preserved untouched. Backups exist as `DivAuth.backup` and `diva.backup`.
+A fuller verification report is provided separately in `Research_Verification_Report.md`. The original research file `DivAuth` and the summary `diva` are preserved untouched, as are the companion studies `7SonsSceva` and `casestudy`. Backups exist as `DivAuth.backup` and `diva.backup`.
 
 ---
 
@@ -97,7 +97,12 @@ Every substantive section of the original research is carried into this book:
 - the ten-lesson curriculum,
 - the further academic resources.
 
-The original document's visual references are listed in Appendix J so that nothing from the source is lost.
+Two companion studies have also been folded in:
+
+- the history, setting, and contrast behind **the seven sons of Sceva**, which now forms the full case study at §7.5 and the Ephesian setting of the armour at §9.1;
+- the **catalogue of twelve New Testament deliverance accounts**, which now forms §4.10.
+
+The original document's visual references are listed in Appendix J so that nothing from the source is lost. Appendix K maps every source section to its place in the book.
 
 ---
 
@@ -605,6 +610,49 @@ Her subsequent life included following Jesus and supporting His ministry.
 | Woman with spirit of infirmity | Luke 13:10–17 | Some conditions are satanic, but not every illness is demonic |
 | Mary Magdalene | Luke 8:1–3; Mark 16:9 | Deliverance leads to discipleship and service |
 
+## 4.10 A catalogue of New Testament deliverance accounts
+
+The seven encounters above are the accounts the Gospel writers develop as narrative. The New Testament in fact records a wider set of specific, individual accounts: eight performed by Jesus, four by those He commissioned, and one attempted without Him.
+
+Use this catalogue as a reference and a teaching aid, not as a technique list. The point of every entry is the same — the authority belongs to Christ.
+
+**Performed by Jesus**
+
+| Account | Scripture |
+|---|---|
+| The man in the Capernaum synagogue | Mark 1:21–28; Luke 4:31–37 |
+| The Gerasene (Gadarene) demoniac — "Legion" | Matthew 8:28–34; Mark 5:1–20; Luke 8:26–39 |
+| The mute demoniac | Matthew 9:32–34 |
+| The blind and mute demoniac, and the Beelzebul controversy | Matthew 12:22–23; Luke 11:14 |
+| The Syrophoenician (Canaanite) woman's daughter | Matthew 15:21–28; Mark 7:24–30 |
+| The boy with the unclean spirit | Matthew 17:14–21; Mark 9:14–29; Luke 9:37–43 |
+| The woman with a disabling spirit | Luke 13:10–17 |
+| Mary Magdalene | Mark 16:9; Luke 8:2 |
+
+**Performed by His commissioned followers**
+
+| Account | Scripture |
+|---|---|
+| The Twelve, sent out with authority | Mark 6:7–13; Luke 9:1 |
+| The seventy(-two), returning with joy | Luke 10:17–20 |
+| An unnamed man casting out demons in Jesus' name | Mark 9:38–41; Luke 9:49–50 |
+| Philip the Evangelist in Samaria | Acts 8:6–7 |
+| The Apostle Paul at Philippi | Acts 16:16–18 |
+
+**Attempted without Him**
+
+| Account | Scripture |
+|---|---|
+| The seven sons of Sceva | Acts 19:13–16 |
+
+**Notes on the catalogue**
+
+- Matthew reports **two** men healed in the Gerasene region (Matthew 8:28); Mark and Luke narrate one.
+- The deliverance of **Mary Magdalene** is not narrated as an event; Luke 8:2 and Mark 16:9 report it as having occurred.
+- The **unnamed exorcist** in Mark 9:38 is the passage where Jesus refuses exclusivism: "Forbid him not: for there is no man which shall do a miracle in my name, that can lightly speak evil of me."
+- **David and the distressing spirit** in 1 Samuel 16:14–23 is usually classified as relief rather than a formal exorcism: the spirit is said to depart when David plays, and no command of dismissal is recorded.
+- **Paul's command** at Philippi is the pattern the rest of this book will follow: no ceremony, no interrogation, no object — "I command thee in the name of Jesus Christ to come out of her" (Acts 16:18).
+
 ### Teaching Notes
 
 1. Teach the encounters as revelations of Christ, not as exotic stories.
@@ -612,6 +660,7 @@ Her subsequent life included following Jesus and supporting His ministry.
 3. Highlight the restoration motif: sitting, clothed, in his right mind; loosed; restored to community.
 4. Correct the Mary Magdalene legend explicitly.
 5. Keep the medical caution from Encounter 4 and Encounter 6.
+6. Use §4.10 as a homework reading list, then ask which single feature every successful account has in common.
 
 ---
 
@@ -878,6 +927,74 @@ The lesson is that Christ's name is not a magical formula that can be manipulate
 
 Spiritual authority is not acquired through imitation, theatrical declarations, or the repetition of religious phrases.
 
+### The historical setting
+
+**Acts 19:11–20**
+
+The incident did not occur in a religious vacuum. Paul was ministering in Ephesus, capital of the Roman province of Asia and one of the great centres of the ancient occult trade.
+
+- **The Temple of Artemis** stood in the city, one of the seven wonders of the ancient world.
+- **Magic manuals were an industry.** When the new believers renounced their former practice, they publicly burned their scrolls (Acts 19:19).
+- **The "Ephesian Letters."** Ephesus was so closely associated with sorcery that protective charms and amulets across the Mediterranean were known as *grammata Ephesia* — the Ephesian Letters. Ellicott describes them as "small slips of parchment in silk bags, on which were written strange cabalistical words, of little or of lost meaning."
+
+The Greek of Acts 19:19 reads "five myriads of silver" (πέντε μυριάδες ἀργυρίου). The coin is commonly identified as the Attic drachma (Ellicott), though commentators have noted the alternative of Jewish shekels. A drachma was reckoned as a day's wage for a labourer, so on the drachma reading the burnt library was worth roughly **fifty thousand days of labour**. That figure tells us two things at once: how deeply magic had penetrated the life of the city, and how costly the Ephesians' break with it really was.
+
+Observe the outcome. The defeat of seven frauds did not produce fresh curiosity about magic. It produced repentance. Fear fell on the city, the name of the Lord Jesus was magnified, and people brought their spellbooks into the open and burned them.
+
+### Who was Sceva?
+
+Acts 19:14 names him:
+
+> "And there were seven sons of [one] Sceva, a Jew, [and] chief of the priests, which did so."
+
+The Greek calls him Ἰουδαίου ἀρχιερέως, "a Jewish chief priest." No high priest named Sceva appears in the surviving records of the Jerusalem temple, and commentators have generally taken the title in one of three ways:
+
+- a member of the priestly aristocracy, since ἀρχιερεύς (*archiereus*) was often used broadly of prominent men from high-priestly families;
+- the head of one of the twenty-four rotating priestly courses;
+- a self-assumed title of credibility, useful in a Diaspora city where Jewish priests were reputed to possess secret knowledge of sacred names.
+
+His name is not Hebrew. In the New Testament it appears in Greek as Σκευᾶς (*Skeuas*), and it is commonly traced to the Roman family name *Scaeva*, meaning "left-handed."
+
+**Note:** this etymology is a scholarly proposal, not a documented fact. Nothing further is known of Sceva outside this single verse. The history does not turn on the meaning of his name; it turns on what his sons attempted.
+
+### Why the formula failed
+
+The men were not merely unbelievers using religious words. They were professionals. The New Testament calls them ἐξορκισταί — exorcists — and Acts describes them as going from place to place.
+
+First-century Jewish exorcism was widely practised and widely respected. Its characteristic method was not direct command but accumulated invocation: long strings of revered names, stacked together so that if one name carried no authority another might. Ellicott, commenting on this very verse, notes that to such men "the name of the Lord Jesus" was "just another formula, mightier than the name of the Most High God, or that of the archangels Raphael or Michael, which were used by others."
+
+Josephus gives a worked example. He reports seeing a countryman of his own, Eleazar, exorcising a demoniac in the presence of Vespasian and his officers. The method: a ring bearing a root attributed to Solomon was held to the man's nostrils, the demon was drawn out through the nostrils, Eleazar adjured it in the name of Solomon never to return while reciting Solomon's incantations, and — to prove the departure to the spectators — commanded the spirit to overturn a basin of water set a little way off (Josephus, *Antiquities* 8.2.5).
+
+Set that beside the Gospels. Jesus never appealed to a higher power, never used an object, and never performed for the crowd.
+
+To the sons of Sceva, "Jesus" was not a Person to be obeyed. It was one more entry in the roster.
+
+### Jesus, Paul, and the itinerant exorcists
+
+| | Itinerant exorcists | Jesus | Paul |
+|---|---|---|---|
+| **Source of authority** | Accumulated names and traditions | His own divine identity | Delegated commission from Christ |
+| **Method** | Long invocations; stacking sacred names | Brief direct command | Direct command in the name of Jesus Christ (Acts 16:18) |
+| **Objects and props** | Rings, roots, amulets, scrolls | None — His word alone | None for exorcism |
+| **Relationship** | Transactional — names used as passwords | Relational — the spirits knew Him | Relational — an ambassador speaking for the Lord he serves |
+
+### What the account does not teach
+
+- **It does not teach that demons keep a register of authorised ministers.** The spirit's reply exposes the men's claim, not an administrative list.
+- **It does not teach that failure in ministry proves a lack of faith.** The disciples failed in the same Gospel record and Jesus pointed them to prayer (Mark 9:14–29).
+- **It does not teach that the name of Jesus is dangerous.** The name is not the problem. The use of it apart from Him is.
+- **It does not teach that every case of opposition is demonic.**
+
+**Praxis note:** The test of spiritual authority is not theatrical effect. It is conformity to Christ — compassion, dependence, submission to Him, and care for the person in front of you.
+
+### Teaching Notes
+
+1. Read Acts 19:11–20 in full before teaching the passage.
+2. Ask: "What exactly did the seven sons lack — knowledge, technique, or relationship?"
+3. Contrast the three columns of the table above. Let the class supply the contrasts.
+4. Use the Ephesian setting to show the cost of genuine repentance, not merely the failure of fraud.
+5. State the "what it does not teach" list explicitly. These are the misreadings people arrive with.
+
 ## 7.6 The authority of believers today
 
 The New Testament provides a foundation for believers to:
@@ -1059,6 +1176,21 @@ Use this grid carefully. It is not a diagnostic manual.
 Ephesians 6:10–18
 
 Paul does not teach believers to become preoccupied with demons. He teaches them to become established in the strength of the Lord.
+
+### Why this letter was written to Ephesus
+
+The armour passage is not addressed to a general audience. It is addressed to the church in Ephesus — the same city in which the sons of Sceva were publicly defeated, and in which new believers had just burned their spellbooks.
+
+That context answers an obvious question. Ephesians had been taught to trust charms, amulets, and incantations for protection. Having renounced all of it, they asked the question anyone would ask: *without our charms, what now protects us?*
+
+Paul's answer removes the whole category of the talisman and replaces it with what God supplies.
+
+- **Armour over amulets.** The protection is not an object the believer carries but a reality God gives: truth, righteousness, readiness, faith, salvation, the Word, prayer.
+- **The allusion runs deeper than Rome.** Roman soldiers were a familiar sight in Ephesus, but Paul's imagery also echoes Isaiah, where God Himself puts on righteousness as a breastplate and salvation as a helmet (Isaiah 59:17). Believers are clothed in God's own strength.
+- **Standing, not seizing.** Paul tells the Ephesians to "stand" repeatedly (Ephesians 6:11, 13, 14). Where the sons of Sceva tried to seize a power they did not possess, the Christian is told to hold ground Christ has already won.
+- **The enemy is spiritual, not human.** "We wrestle not against flesh and blood" (Ephesians 6:12). The person before you in ministry is never the enemy.
+
+**Praxis note:** The armour is the Ephesian answer to the Ephesian question. It replaces every charm, every formula, and every secret technique with dependence on God.
 
 ## 9.2 The armour
 
@@ -2747,12 +2879,34 @@ This appendix maps the original research to the teaching book, so that no substa
 | Inline citation artefacts ("only.bible +1," etc.) | Appendix H |
 | "My recommendation" | Introduction |
 
+**Source document: `7SonsSceva`**
+
+| Original section in `7SonsSceva` | Where it appears in this book |
+|---|---|
+| The account and its outcome | §7.5 |
+| Who Sceva was; the title ἀρχιερεύς; the name Σκευᾶς | §7.5, "Who was Sceva?" |
+| First-century Jewish exorcism practices | §7.5, "Why the formula failed" |
+| The magical culture of Ephesus and the Ephesian Letters | §7.5, "The historical setting" |
+| Jesus, Paul, and ancient exorcists compared | §7.5, comparison table |
+| The Armour of God read against its Ephesian setting | §9.1, "Why this letter was written to Ephesus" |
+| Summary of the covered themes | §7.5 and §9.1 taken together |
+
+**Source document: `casestudy`**
+
+| Original section in `casestudy` | Where it appears in this book |
+|---|---|
+| The catalogue of twelve individual deliverance accounts | §4.10 |
+| The note on 1 Samuel 16:14–23 | §4.10, Notes on the catalogue |
+| The sons of Sceva narrative | §7.5 (duplicates `7SonsSceva`; not separately reproduced) |
+
 **Original files preserved:**
 
 - `DivAuth` — untouched.
 - `DivAuth.backup` — backup.
 - `diva` — untouched.
 - `diva.backup` — backup.
+- `7SonsSceva` — untouched.
+- `casestudy` — untouched.
 
 ---
 

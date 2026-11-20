@@ -15,7 +15,12 @@ from pathlib import Path
 import markdown
 from lxml import etree, html as LH
 
-from weasyprint import HTML
+# WeasyPrint needs the Pango/GObject native runtime, which is not present on
+# every machine that edits this book. Import it only where a PDF is rendered so
+# the markdown, EPUB, DOCX and study stages still run without it.
+def _weasyprint_html():
+    from weasyprint import HTML  # noqa: PLC0415
+    return HTML
 
 BOOK_DIR = Path(__file__).resolve().parent
 ROOT = BOOK_DIR.parent
@@ -543,7 +548,7 @@ def build_pdf(cfg: dict, preface_body: str, sections: list[dict]) -> tuple[Path,
         main_html, entries, epub_sections = build_main(cfg, sections, spacer)
         entries = [toc_entry(0, "Preface", "preface", "front")] + entries
         html_str = build_html(cfg, preface_html, main_html, entries, None)
-        doc = HTML(string=html_str, base_url=str(BOOK_DIR)).render()
+        doc = _weasyprint_html()(string=html_str, base_url=str(BOOK_DIR)).render()
         anchors = {}
         for i, page in enumerate(doc.pages):
             for a in page.anchors:
@@ -569,7 +574,7 @@ def build_pdf(cfg: dict, preface_body: str, sections: list[dict]) -> tuple[Path,
     entries = [toc_entry(0, "Preface", "preface", "front")] + entries
     html_str = build_html(cfg, preface_html, main_html, entries, pages)
     (OUT / "interior.html").write_text(html_str, encoding="utf-8")
-    doc = HTML(string=html_str, base_url=str(BOOK_DIR)).render()
+    doc = _weasyprint_html()(string=html_str, base_url=str(BOOK_DIR)).render()
     pdf_path = OUT / "Divine_Authority_Interior_6x9.pdf"
     doc.write_pdf(str(pdf_path))
 
@@ -682,7 +687,7 @@ def build_cover_front(cfg: dict) -> tuple[Path, Path]:
   <div class="imprint">{esc(cfg['publisher'])}</div>
 </div></body></html>"""
     pdf = OUT / "Divine_Authority_Cover_Front.pdf"
-    HTML(string=html_str, base_url=str(BOOK_DIR)).write_pdf(str(pdf))
+    _weasyprint_html()(string=html_str, base_url=str(BOOK_DIR)).write_pdf(str(pdf))
     png = OUT / "cover.jpg"
     subprocess.run(
         ["pdftoppm", "-jpeg", "-r", "300", "-singlefile", str(pdf), str(OUT / "cover")],
@@ -767,7 +772,7 @@ body {{ width: {width:.4f}in; height: {height:.4f}in; background: #0a1420; }}
 </div></div>
 </body></html>"""
     path = OUT / "Divine_Authority_Cover_Wrap.pdf"
-    HTML(string=html_str, base_url=str(BOOK_DIR)).write_pdf(str(path))
+    _weasyprint_html()(string=html_str, base_url=str(BOOK_DIR)).write_pdf(str(path))
     (OUT / "cover_wrap.html").write_text(html_str, encoding="utf-8")
     return path
 
@@ -776,11 +781,13 @@ body {{ width: {width:.4f}in; height: {height:.4f}in; background: #0a1420; }}
 # EPUB
 # --------------------------------------------------------------------------
 
-def build_epub(cfg: dict, epub_sections: list[dict]) -> Path:
+def build_epub(cfg: dict, epub_sections: list[dict],
+               out_path: Path | None = None, use_cover: bool = True,
+               identifier: str | None = None) -> Path:
     from ebooklib import epub
 
     book = epub.EpubBook()
-    book.set_identifier(f"divine-authority-{cfg['year']}")
+    book.set_identifier(identifier or f"divine-authority-{cfg['year']}")
     book.set_title(cfg["title"])
     book.set_language(cfg["language"])
     book.add_author(cfg["author"])
@@ -791,7 +798,7 @@ def build_epub(cfg: dict, epub_sections: list[dict]) -> Path:
     book.add_metadata("DC", "subject", "Religion / Christian Ministry / Deliverance")
 
     cover = OUT / "cover.jpg"
-    if cover.exists():
+    if use_cover and cover.exists():
         book.set_cover("cover.jpg", cover.read_bytes())
 
     css = (BOOK_DIR / "styles" / "ebook.css").read_text(encoding="utf-8")
@@ -808,8 +815,11 @@ def build_epub(cfg: dict, epub_sections: list[dict]) -> Path:
             file_name=f"{sec['id']}.xhtml",
             lang=cfg["language"],
         )
-        c.content = f"""<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html>
+        # Note: no <?xml ... encoding=?> declaration. lxml refuses to parse an
+        # encoding declaration from a str, which makes ebooklib's own body
+        # extraction silently return empty and fail the build. UTF-8 is the XML
+        # default, so dropping the declaration is both valid and equivalent.
+        c.content = f"""<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="{cfg['language']}">
 <head><title>{esc(sec['title'])}</title><link rel="stylesheet" href="style/ebook.css" type="text/css"/></head>
 <body>{sec['html']}</body>
@@ -823,7 +833,7 @@ def build_epub(cfg: dict, epub_sections: list[dict]) -> Path:
     book.add_item(epub.EpubNcx())
     book.add_item(epub.EpubNav())
 
-    path = OUT / "Divine_Authority.epub"
+    path = out_path or (OUT / "Divine_Authority.epub")
     epub.write_epub(str(path), book, {})
     return path
 
@@ -832,7 +842,8 @@ def build_epub(cfg: dict, epub_sections: list[dict]) -> Path:
 # DOCX
 # --------------------------------------------------------------------------
 
-def build_docx(cfg: dict, preface_body: str, sections: list[dict]) -> Path:
+def build_docx(cfg: dict, preface_body: str, sections: list[dict],
+               out_path: Path | None = None, preface_title: str = "Preface") -> Path:
     from docx import Document
     from docx.enum.section import WD_SECTION
     from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
@@ -1022,9 +1033,9 @@ def build_docx(cfg: dict, preface_body: str, sections: list[dict]) -> Path:
             for child in el:
                 add_html_block(container, child)
 
-    # Preface
+    # Front matter block (the Preface in the full book, "About" in a study)
     p = doc.add_paragraph(style="Heading 1")
-    r = p.add_run("Preface"); r.font.name = "Cormorant Garamond"; r.font.size = Pt(24)
+    r = p.add_run(preface_title); r.font.name = "Cormorant Garamond"; r.font.size = Pt(24)
     pre_el = render_body(preface_body, add_lead=False, context="preface")
     for child in pre_el:
         add_html_block(doc, child)
@@ -1067,7 +1078,7 @@ def build_docx(cfg: dict, preface_body: str, sections: list[dict]) -> Path:
             for child in body_el:
                 add_html_block(doc, child)
 
-    path = OUT / "Divine_Authority.docx"
+    path = out_path or (OUT / "Divine_Authority.docx")
     doc.save(str(path))
     return path
 
